@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SuperFan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <ul>
+                    <li class="active cursor">Home</li>
+                    <li class="cursor">Video Submission</li>
+                    <li class="cursor">Video Voting</li>
+                    <li class="cursor">Leaderboard</li>
+                    <li class="cursor">T&C</li>
+                    <li class="cursor">Contest Rules</li>
+                    <li class="cursor">Settings</li>
+                    <li class="cursor">Login</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="home" class="menu-content">
+                    <img id="banner" src="https://images.unsplash.com/photo-1545558490-d4ca82897db4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="SuperFan Banner">
+
+                    <h1>Welcome SuperFans!</h1>
+                    <h3>
+                        Submit your best video and get the chance to win an all exclusive experience during the
+                        AFC Asian Cup Qatar 2023™!
+                    </h3>
+
+                    <p>Submission Period : DD/MM/YYYY - DD/MM/YYYY</p>
+
+                    <h3>OR</h3>
+
+                    <h3>
+                        Vote your favorite videos and win Signed Merchandize
+                        from all star players!
+                    </h3>
+
+                    <p>Voting Period : DD/MM/YYYY - DD/MM/YYYY</p>
+                </div>
+
+                <div id="submit" class="menu-content">
+
+                    <div id="beforeSubmission">
+                        <h3>Video Submission Portal</h3>
+                        <p>Submission Period : DD/MM/YYYY - DD/MM/YYYY</p>
+
+                        <p>Video Submission Rule : </p>
+                        <ol>
+                            <li>Video duration is no more than 1 minute.</li>
+                            <li>Video format should either be MP4 or MOV.</li>
+                            <li>No resubmission is allowed.</li>
+                        </ol>
+
+                        <p>Upload your video here!</p>
+                        <img id="upload" src="file.png" alt="Upload image">
+                        
+                        <form id="myForm">
+                            <label for="sloganlabel">Slogan : </label><br>
+                            <input type="text" id="slogan" name="slogan"><br>
+                            <button type="submit" id="submitVideo">Submit</button>
+                        </form>
+                    </div>
+
+                    <div id="afterSubmission" class="hidden">
+                        <h3>Thank you for submitting your video!</h3>
+                        <h4>We will contact you if your video has been shortlisted.</h4>
+
+                        <p>Submitted Info :</p>
+                        <p>Name : SuperFan Name</p>
+                        <p>Country : Country Name</p>
+                        <p>Slogan : Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <p>Video ID : 123456</p>
+                        <img id="videoSubmit" src="https://i.ytimg.com/vi/m1hbby1dEGk/maxresdefault.jpg" alt="Video Thumbnail">
+                    </div>
+                    
+                </div>
+ 
+                <div id="videoVoting" class="menu-content">
+                    <div id="beforeVoting">
+                        <h3>Vote 3 of your favorite videos and win a chance to get an all-exclusive 
+                            merchandise from the AFC Asian Cup Qatar 2023™!
+                        </h3>
+        
+                        <p>Voting closes on DD/MM/YYYY</p>
+    
+                        <div class="video-row">
+                            <div class="video-info">
+                                <img class='videoList'src="https://egnyte.footballmarketingasia.com/dd/NJctNnCGQy/?entryId=9b53e6d3-bd20-4c06-a211-553995e926ee&thumbNail=1&w=1200&h=1200&type=proportional&preview=true" alt="Video">
+                                <p>Video ID : 123456</p>
+                                <p>Name : SuperFan Name</p>
+                                <p>Country : Country Name</p>
+                                <p>Slogan : Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <button class="voteButton">VOTE</button>
+    
+                            </div>
+                            <div class="video-info">
+                                <img class='videoList'src="https://egnyte.footballmarketingasia.com/dd/NJctNnCGQy/?entryId=9b53e6d3-bd20-4c06-a211-553995e926ee&thumbNail=1&w=1200&h=1200&type=proportional&preview=true" alt="Video">
+                                <p>Video ID : 123456</p>
+                                <p>Name : SuperFan Name</p>
+                                <p>Country : Country Name</p>
+                                <p>Slogan : Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <button class="voteButton">VOTE</button>
+                            </div>
+                            <div class="video-info">
+                                <img class='videoList'src="https://egnyte.footballmarketingasia.com/dd/NJctNnCGQy/?entryId=9b53e6d3-bd20-4c06-a211-553995e926ee&thumbNail=1&w=1200&h=1200&type=proportional&preview=true" alt="Video">
+                                <p>Video ID : 123456</p>
+                                <p>Name : SuperFan Name</p>
+                                <p>Country : Country Name</p>
+                                <p>Slogan : Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <button class="voteButton">VOTE</button>
+                            </div> 
+
+                        </div>
+                        <button type="submit" id="submitVotes">SUBMIT VOTE</button>
+                    </div>
+
+                    <div id="afterVoting" class="hidden">
+                        <div id="beforeQuiz">
+                            <h3>Thank you for your votes!</h3>
+                            <p>Answer the following quiz to get a chance of winning an exclusive merchandise!</p>
+                            <p>Remember, time matters, so be quick! Good Luck!</p>
+                            <br><br>
+                            <div id="quiz">
+                                <p>Quiz Questions Here</p>
+                        
+                                <button id="submitQuiz">Submit Quiz!</button>
+                            </div>
+                        </div>
+                        <div id="afterQuiz" class="hidden">
+                            <h3>Thank you for participating!</h3>
+                            <h4>Your answers have been submitted. 
+                                We will contact you if you are one of the winners.</h4>
+                            <p>See you in the next event!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="leaderboard" class="menu-content">
+                    <h3>Top 10 Superfan Videos
+                    <h4>Best of luck for the superfans!</h4>
+                    <p>Remember to cast you votes before DD/MM/YYYY</p>
+                    
+                    <div class="video-column">
+                        <div class="video-lead">
+                            <img class='video-pic'src="https://egnyte.footballmarketingasia.com/dd/NJctNnCGQy/?entryId=9b53e6d3-bd20-4c06-a211-553995e926ee&thumbNail=1&w=1200&h=1200&type=proportional&preview=true" alt="Video">
+                            <div>
+                                <p>Video ID : 123456</p>
+                                <p>Name : SuperFan Name</p>
+                                <p>Country : Country Name</p>
+                                <p>Slogan : Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                        </div>
+                        <div class="video-lead">
+                            <img class='video-pic'src="https://egnyte.footballmarketingasia.com/dd/NJctNnCGQy/?entryId=9b53e6d3-bd20-4c06-a211-553995e926ee&thumbNail=1&w=1200&h=1200&type=proportional&preview=true" alt="Video">
+                            <div>
+                                <p>Video ID : 123456</p>
+                                <p>Name : SuperFan Name</p>
+                                <p>Country : Country Name</p>
+                                <p>Slogan : Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                        </div>
+                        <div class="video-lead">
+                            <img class='video-pic'src="https://egnyte.footballmarketingasia.com/dd/NJctNnCGQy/?entryId=9b53e6d3-bd20-4c06-a211-553995e926ee&thumbNail=1&w=1200&h=1200&type=proportional&preview=true" alt="Video">
+                            <div>
+                                <p>Video ID : 123456</p>
+                                <p>Name : SuperFan Name</p>
+                                <p>Country : Country Name</p>
+                                <p>Slogan : Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>
+
+                <div id="terms" class="menu-content">
+                    <h3>T&C Here</h3>
+                </div>
+
+                <div id="contestRule" class="menu-content">
+                    <h3>Contest Rules Here</h3>
+                </div>
+
+                <div id="settings" class="menu-content">
+                    <h3>Settings Here</h3>
+                </div>
+                
+                <div id="profile" class="menu-content">
+                    <div id="login">
+                        <h3>Log In</h3>
+                        <form id="log">
+                            <label for="sloganlabel">Email : </label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="sloganlabel">Verification Code : </label><br>
+                            <a href="#" id="otpLink">Send Code</a><br>
+                            <input type="number" id="otp" name="otp"><br>
+                            <a href="#" id="createAcc">Create a new account</a><br>
+                            <button class="signin">Log In</button>
+                        </form>
+                    </div>
+                    <div id="signup" class="hidden">
+                        <h3>Sign Up</h3>
+                        <form id="sign">
+                            <label for="sloganlabel">First Name : </label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="lname">Last Name : </label><br>
+                            <input type="text" id="lname" name="lname"><br>
+                            <label for="sloganlabel">Country of Residence : </label><br>
+                            <input type="text" id="country" name="country"><br>
+                            <label for="sloganlabel">Email : </label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <a href="#" id="otpLink">Send Code</a><br>
+                            <label for="password">Verification Code : </label><br>
+                            <input type="number" id="otp" name="otp"><br>
+                            <button id="create">Submit</button>
+                        </form>
+                    </div>
+                    <div id="account" class="hidden">
+                        <h3>Finish setting up your account!</h3>
+                        <form id="log">
+                            <label for="sloganlabel">Email : </label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <a href="#" id="otpLink">Send Code</a><br>
+                            <label for="password">Verification Code : </label><br>
+                            <input type="number" id="otp" name="otp"><br>
+                            <a href="#">Forgot Password?</a><br>
+                            <button class="signin">Log In</button>
+                        </form>
+                    </div>
+
+                    <div id="finish" class="hidden">
+                        <h3>You are logged in!</h3>
+                        <p>You are now eligible to upload your superfan video or vote for your favorite videos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>

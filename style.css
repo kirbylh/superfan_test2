@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:25%;
+    background-color:#f1f1f1;
+    height:100vh;
+}
+
+
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+.cursor{
+    padding:10px;
+    cursor:pointer;
+}
+
+li:active{
+    background-color: #ccc;
+}
+
+.content{
+    flex-grow:1;
+    width:75%;
+}
+
+.menu-content{
+    text-align: center;
+    display:none
+}
+
+#banner{
+    width:90%;
+    object-fit:cover;
+    height:300px;
+    padding:2%;
+}
+
+#home > h3{
+    padding:1%;
+    font-size: 95%;
+    padding-left:2%;
+    padding-right:2%;
+    text-align: center;
+}
+
+#submit, #videoVoting{
+    text-align: left;
+    padding : 3% 5%;
+}
+
+#beforeSubmission > p{
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+#beforeSubmission > ol{
+    padding-left : 6%;
+}
+
+li{
+    padding:10px
+}
+
+#upload{
+    width:30px;
+}
+
+#slogan{
+    width:50%;
+    height:30px;
+}
+
+#submitVideo{
+    padding:1%;
+
+    background-color:white;
+    color:green;
+    border:1px solid green;
+    border-radius: 5px;
+    margin-top:1%;
+    cursor: pointer;
+}
+
+#submitVideo:hover{
+    background-color: green;
+    border:1px solid green;
+    color:white;
+}
+
+#upload{
+    cursor: pointer;
+}
+
+#videoSubmit{
+    width:300px;
+    height:200px;
+}
+
+
+.hidden{
+    display:none;
+}
+
+#afterSubmission > p {
+    padding-top:10px;
+}
+
+#videoSubmit{
+    padding-top:10px;
+}
+
+.videoList{
+    height:200px;
+    width:100%;
+    object-fit: cover;
+}
+
+.video-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top:1%;
+}
+
+.voteButton{
+    padding:2%;
+
+    background-color:white;
+    color:green;
+    border:1px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:1%;
+}
+
+.video-info{
+    width:30%; 
+}
+
+.video-info > p{
+    padding-top:5px;
+    font-size: 90%;
+    padding-left: 0;
+}
+
+.button-active{
+    background-color: green;
+    color:white;
+}
+
+#submitVotes{
+    padding:2%;
+    border-radius: 5px;
+    background-color: white;
+    color:orange;
+    border:2px solid orange;
+    margin-top:2%;
+    cursor: pointer;
+}
+
+#submitVotes:hover{
+    background-color: orange;
+    color:white;
+}
+
+#quiz{
+    width:50%;
+    height:400px;
+    border:1px solid black;
+    text-align: center;
+}
+
+#submitQuiz{
+    padding:2%;
+    border-radius: 5px;
+    color:gray;
+    border: 1px solid gray;
+    background-color: white;
+    margin-top:2%;
+}
+
+#submitQuiz:hover{
+    background-color: gray;
+    color:white;
+}
+
+#leaderboard{
+    margin-top:2%;
+    text-align: left;
+    padding-left: 6%;
+}
+
+#leaderboard >h3,h4, p{
+    padding:10px;
+}
+
+.video-lead{
+    display: flex;
+    flex-wrap:wrap;
+    padding:1%;
+}
+
+.video-pic{
+    width:300px;
+    height:200px;
+    object-fit: cover;
+}
+
+.video-lead>div{
+    width:50%;
+    padding:2%;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile{
+    text-align: left;
+    padding-left:6%;
+    padding-top:10%;
+}
+
+#login>h3, #signup>h3, #account>h3{
+    padding-bottom:3%;
+}
+
+#log>input, #sign>input{
+    width:30%;
+    height:30px;
+}
+
+#log>button, #sign>button{
+    padding:1%;
+    background-color: white;
+    border:1px solid gray;
+    border-radius: 5px;
+    margin-top:1%;
+}
+
+#log>a{
+    font-size:70%
+}
+
+
